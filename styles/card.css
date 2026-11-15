@@ -1,0 +1,21 @@
+.card{
+--type1: var(--type-grass);
+--type2: var(--type-water);
+
+    height: 160px;
+    width: 240px;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    background:
+        linear-gradient(
+            135deg,
+            var(--type1),
+            var(--type2)
+        );
+    box-shadow: var(--shadow-sm);
+}
+
+.card:hover{
+    border-color: var(--color-border);
+    background-color: var(--type-grass-dark);
+}

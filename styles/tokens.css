@@ -1,0 +1,190 @@
+:root {
+ /* ==========================================================
+   COLOR TOKENS
+   ========================================================== */
+
+/* Haupt-Hintergrund der Anwendung
+   Verwendung:
+   - body
+   - main
+   - App-Container
+*/
+--color-bg: #0F1223;
+
+/* Standard-Hintergrund für Karten und Container
+   Verwendung:
+   - Pokémon-Karten
+   - Header
+   - Footer
+   - Sidebar
+   - Modal/Dialog
+*/
+--color-surface: #1A1E35;
+
+/* Helleres Surface für interaktive Elemente
+   Verwendung:
+   - Suchfeld
+   - Input-Felder
+   - Selectboxen
+   - Badge-Container
+   - Hover-Flächen
+*/
+--color-surface-light: #252B47;
+
+/* Primäre Akzentfarbe
+   Verwendung:
+   - Buttons
+   - Links
+   - aktive Navigation
+   - Icons
+   - Fokus-Ring
+   - Spinner
+*/
+--color-primary: #8B5CF6;
+
+/* Hover-Zustand der Primärfarbe
+   Verwendung:
+   - Button:hover
+   - Link:hover
+   - Hover-Effekte
+*/
+--color-primary-light: #A78BFA;
+
+/* Gedrückter Zustand
+   Verwendung:
+   - Button:active
+   - aktive Tabs
+*/
+--color-primary-dark: #6D28D9;
+
+/* Haupttext
+   Verwendung:
+   - Überschriften
+   - Pokémon-Namen
+   - Buttons
+*/
+--color-text: #FFFFFF;
+
+/* Sekundärer Text
+   Verwendung:
+   - Pokédex-Nummer
+   - Größen
+   - Gewicht
+   - Beschreibung
+   - Labels
+*/
+--color-text-secondary: #C7C9D9;
+
+/* Weniger wichtiger Text
+   Verwendung:
+   - Platzhalter
+   - Hinweise
+   - Zeitstempel
+   - Footer
+   - deaktivierte Elemente
+*/
+--color-text-muted: #8A8FA8;
+
+/* Dezente Linien
+   Verwendung:
+   - Card Border
+   - Input Border
+   - Trennlinien
+   - Tabellen
+*/
+--color-border: rgba(255,255,255,.08);
+
+  /* ===== Pokémon Types ===== */
+
+  --type-normal: #A8A8B2;
+  --type-fighting: #E53935;
+  --type-flying: #7EB6FF;
+  --type-poison: #A855F7;
+  --type-ground: #D4A373;
+  --type-rock: #BDB076;
+  --type-bug: #8BC34A;
+  --type-ghost: #7E57C2;
+  --type-steel: #90A4AE;
+  --type-fire: #FF7043;
+  --type-water: #42A5F5;
+  --type-grass: #66BB6A;
+  --type-electric: #FFD54F;
+  --type-psychic: #F06292;
+  --type-ice: #81D4FA;
+  --type-dragon: #7C4DFF;
+  --type-dark: #546E7A;
+  --type-fairy: #F48FB1;
+  --type-stellar: #51E5FF;
+  --type-unknown: #9E9E9E;
+
+  /* Zweitfarben für Farbverläufe */
+
+  --type-normal-dark: #7C7C88;
+  --type-fighting-dark: #B71C1C;
+  --type-flying-dark: #4A90E2;
+  --type-poison-dark: #7E22CE;
+  --type-ground-dark: #9C6B3C;
+  --type-rock-dark: #8E7E4F;
+  --type-bug-dark: #558B2F;
+  --type-ghost-dark: #5E35B1;
+  --type-steel-dark: #607D8B;
+  --type-fire-dark: #D84315;
+  --type-water-dark: #1E88E5;
+  --type-grass-dark: #2E7D32;
+  --type-electric-dark: #F9A825;
+  --type-psychic-dark: #C2185B;
+  --type-ice-dark: #29B6F6;
+  --type-dragon-dark: #512DA8;
+  --type-dark-dark: #37474F;
+  --type-fairy-dark: #EC407A;
+  --type-stellar-dark: #FF6EC7;
+  --type-unknown-dark: #616161;
+
+  /* ===== Shadows ===== */
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.15);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.25);
+  --shadow-lg: 0 16px 40px rgba(0,0,0,.35);
+
+  /* ===== Radius ===== */
+
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-round: 9999px;
+
+  /* ===== Spacing ===== */
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  --width-content: 1440px;
+
+  --height-header: 64px;
+  --height-footer: 120px;
+
+  /* ===== Font ===== */
+
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 28px;
+  --font-2xl: 40px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* ===== Animation ===== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
