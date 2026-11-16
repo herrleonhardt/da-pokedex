@@ -55,6 +55,16 @@ main {
   padding: var(--space-xl) 0;
 }
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
 footer {
   display: flex;
   justify-content: center;
