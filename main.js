@@ -55,11 +55,18 @@ function renderPokemon() {
   cardsContainer.innerHTML = "";
   let cardsContainerContent = "";
   renderedPokemon.forEach((pokemon) => {
-    cardsContainerContent += `<article class="card" style="--type1: var(--type-${pokemon.types[0]}); --type2: var(--type-${pokemon.types[pokemon.types.length - 1]});">${pokemon.name}
-    <img src="${pokemon.imgPath}" /> </article>`;
+    cardsContainerContent += getHtmlCardTemplate(pokemon);
   });
 
   cardsContainer.innerHTML = cardsContainerContent;
+}
+
+async function showPokeModal(name){
+  await loadPokemonCardDetails(name);
+  const pokemnon = cachedPokemon[name];
+
+  console.log(`show modla for ${name}`);
+  
 }
 
 /**
@@ -122,6 +129,7 @@ async function loadPokemonListDetails(name) {
   let pokemon = await result.json();
 
   cachedPokemon[name].weight = pokemon.weight;
+  cachedPokemon[name].height = pokemon.height;
   let types = [];
   pokemon.types.forEach((typeSlot) => types.push(typeSlot.type.name));
   cachedPokemon[name].types = types;

@@ -10,29 +10,35 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./style.css" />
-    
   </head>
   <body onload="init()">
     <header>
       <div class="flex-row width-100 content-limit header__content">
+        <div class="header__logo">
         <img class="logo" src="./assets/img/logo.png" alt="" />
         <h1>
           PokéDAx
           <span style="font-size: var(--font-lg)">- fetch 'em all!</span>
         </h1>
-        <img class="logo--ghost" src="./assets/img/outline.png" alt="" />
+        </div>
+        <div class="logo--ghost"></div>
       </div>
     </header>
     <main class="width-100">
-      <div id="cards-container" class="width-100 content-limit cards-container" >
-        <article class="card">test</article>
+      <div id="cards-container" class="width-100 content-limit cards-container">
+        <!-- dynamically filled by script -->
       </div>
     </main>
+    <dialog id="dialog" closedby="any">
+      
+    </dialog>
     <footer>
       <div class="content-limit width-100 footer__content">
         <p>copyright Stefan Leonhardt 2026</p>
       </div>
     </footer>
   </body>
+  <script src="./js/utils.js"></script>
+  <script src="./js/html-templates.js"></script>
   <script src="./main.js"></script>
 </html>

@@ -167,7 +167,7 @@
   --width-content: 1440px;
 
   --height-header: 64px;
-  --height-footer: 120px;
+  --height-footer: 64px;
 
   /* ===== Font ===== */
 
@@ -187,4 +187,5 @@
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
   --transition-slow: 400ms ease;
+
 }

@@ -29,9 +29,27 @@ header {
 .header__content {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   padding: 0 var(--space-xl);
   gap: 32px;
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+@media screen and (max-width: 768px) {
+   span{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header__logo h1{
+    font-size: var(--font-lg);
+  }
 }
 
 .logo {
@@ -41,10 +59,20 @@ header {
 }
 
 .logo--ghost {
+  background-image: url(../assets/img/outline.png);
+    background-repeat: no-repeat;
+background-size: cover;
+  background-position: center;
   height: var(--height-header);
-  width: 160px;
-  object-fit: cover;
-  justify-self: flex-end;
+  width: 320px;
+  filter: invert();
+  filter: opacity(30%);
+}
+
+@media screen and (max-width: 480px) {
+  .logo--ghost{
+    display: none;
+  }
 }
 
 main {
@@ -63,6 +91,10 @@ main {
   justify-content: center;
   align-items: center;
   overflow-y: scroll;
+}
+
+.cards-container::-webkit-scrollbar{
+  display: none;
 }
 
 footer {
