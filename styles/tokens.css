@@ -1,17 +1,17 @@
 :root {
- /* ==========================================================
+  /* ==========================================================
    COLOR TOKENS
    ========================================================== */
 
-/* Haupt-Hintergrund der Anwendung
+  /* Haupt-Hintergrund der Anwendung
    Verwendung:
    - body
    - main
    - App-Container
 */
---color-bg: #0F1223;
+  --color-bg: #0f1223;
 
-/* Standard-Hintergrund für Karten und Container
+  /* Standard-Hintergrund für Karten und Container
    Verwendung:
    - Pokémon-Karten
    - Header
@@ -19,9 +19,9 @@
    - Sidebar
    - Modal/Dialog
 */
---color-surface: #1A1E35;
+  --color-surface: #1a1e35;
 
-/* Helleres Surface für interaktive Elemente
+  /* Helleres Surface für interaktive Elemente
    Verwendung:
    - Suchfeld
    - Input-Felder
@@ -29,9 +29,9 @@
    - Badge-Container
    - Hover-Flächen
 */
---color-surface-light: #252B47;
+  --color-surface-light: #252b47;
 
-/* Primäre Akzentfarbe
+  /* Primäre Akzentfarbe
    Verwendung:
    - Buttons
    - Links
@@ -40,32 +40,32 @@
    - Fokus-Ring
    - Spinner
 */
---color-primary: #8B5CF6;
+  --color-primary: #8b5cf6;
 
-/* Hover-Zustand der Primärfarbe
+  /* Hover-Zustand der Primärfarbe
    Verwendung:
    - Button:hover
    - Link:hover
    - Hover-Effekte
 */
---color-primary-light: #A78BFA;
+  --color-primary-light: #a78bfa;
 
-/* Gedrückter Zustand
+  /* Gedrückter Zustand
    Verwendung:
    - Button:active
    - aktive Tabs
 */
---color-primary-dark: #6D28D9;
+  --color-primary-dark: #6d28d9;
 
-/* Haupttext
+  /* Haupttext
    Verwendung:
    - Überschriften
    - Pokémon-Namen
    - Buttons
 */
---color-text: #FFFFFF;
+  --color-text: #ffffff;
 
-/* Sekundärer Text
+  /* Sekundärer Text
    Verwendung:
    - Pokédex-Nummer
    - Größen
@@ -73,9 +73,9 @@
    - Beschreibung
    - Labels
 */
---color-text-secondary: #C7C9D9;
+  --color-text-secondary: #c7c9d9;
 
-/* Weniger wichtiger Text
+  /* Weniger wichtiger Text
    Verwendung:
    - Platzhalter
    - Hinweise
@@ -83,68 +83,75 @@
    - Footer
    - deaktivierte Elemente
 */
---color-text-muted: #8A8FA8;
+  --color-text-muted: #8a8fa8;
 
-/* Dezente Linien
+  /* Dezente Linien
    Verwendung:
    - Card Border
    - Input Border
    - Trennlinien
    - Tabellen
 */
---color-border: rgba(255,255,255,.08);
+  --color-border: rgba(255, 255, 255, 0.08);
 
   /* ===== Pokémon Types ===== */
 
-  --type-normal: #A8A8B2;
-  --type-fighting: #E53935;
-  --type-flying: #7EB6FF;
-  --type-poison: #A855F7;
-  --type-ground: #D4A373;
-  --type-rock: #BDB076;
-  --type-bug: #8BC34A;
-  --type-ghost: #7E57C2;
-  --type-steel: #90A4AE;
-  --type-fire: #FF7043;
-  --type-water: #42A5F5;
-  --type-grass: #66BB6A;
-  --type-electric: #FFD54F;
-  --type-psychic: #F06292;
-  --type-ice: #81D4FA;
-  --type-dragon: #7C4DFF;
-  --type-dark: #546E7A;
-  --type-fairy: #F48FB1;
-  --type-stellar: #51E5FF;
-  --type-unknown: #9E9E9E;
+  --type-normal: #a8a8b2;
+  --type-fighting: #e53935;
+  --type-flying: #7eb6ff;
+  --type-poison: #a855f7;
+  --type-ground: #d4a373;
+  --type-rock: #bdb076;
+  --type-bug: #8bc34a;
+  --type-ghost: #7e57c2;
+  --type-steel: #90a4ae;
+  --type-fire: #ff7043;
+  --type-water: #42a5f5;
+  --type-grass: #66bb6a;
+  --type-electric: #ffd54f;
+  --type-psychic: #f06292;
+  --type-ice: #81d4fa;
+  --type-dragon: #7c4dff;
+  --type-dark: #546e7a;
+  --type-fairy: #f48fb1;
+  --type-stellar: #51e5ff;
+  --type-unknown: #9e9e9e;
 
   /* Zweitfarben für Farbverläufe */
 
-  --type-normal-dark: #7C7C88;
-  --type-fighting-dark: #B71C1C;
-  --type-flying-dark: #4A90E2;
-  --type-poison-dark: #7E22CE;
-  --type-ground-dark: #9C6B3C;
-  --type-rock-dark: #8E7E4F;
-  --type-bug-dark: #558B2F;
-  --type-ghost-dark: #5E35B1;
-  --type-steel-dark: #607D8B;
-  --type-fire-dark: #D84315;
-  --type-water-dark: #1E88E5;
-  --type-grass-dark: #2E7D32;
-  --type-electric-dark: #F9A825;
-  --type-psychic-dark: #C2185B;
-  --type-ice-dark: #29B6F6;
-  --type-dragon-dark: #512DA8;
-  --type-dark-dark: #37474F;
-  --type-fairy-dark: #EC407A;
-  --type-stellar-dark: #FF6EC7;
+  --type-normal-dark: #7c7c88;
+  --type-fighting-dark: #b71c1c;
+  --type-flying-dark: #4a90e2;
+  --type-poison-dark: #7e22ce;
+  --type-ground-dark: #9c6b3c;
+  --type-rock-dark: #8e7e4f;
+  --type-bug-dark: #558b2f;
+  --type-ghost-dark: #5e35b1;
+  --type-steel-dark: #607d8b;
+  --type-fire-dark: #d84315;
+  --type-water-dark: #1e88e5;
+  --type-grass-dark: #2e7d32;
+  --type-electric-dark: #f9a825;
+  --type-psychic-dark: #c2185b;
+  --type-ice-dark: #29b6f6;
+  --type-dragon-dark: #512da8;
+  --type-dark-dark: #37474f;
+  --type-fairy-dark: #ec407a;
+  --type-stellar-dark: #ff6ec7;
   --type-unknown-dark: #616161;
+
+  --stat-hp: #6af398;
+  --stat-attack: #fddb5c;
+  --stat-defense: #64b0fc;
+  --stat-specialAttack: #c386fb;
+  --stat-specialDefense: #9872fc;
+  --stat-speed: #f677cb;
 
   /* ===== Shadows ===== */
 
-  --shadow-sm: 0 2px 8px rgba(0,0,0,.15);
-  --shadow-md: 0 8px 24px rgba(0,0,0,.25);
-  --shadow-lg: 0 16px 40px rgba(0,0,0,.35);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.35);
 
   /* ===== Radius ===== */
 
@@ -187,5 +194,4 @@
   --transition-fast: 150ms ease;
   --transition-normal: 250ms ease;
   --transition-slow: 400ms ease;
-
 }

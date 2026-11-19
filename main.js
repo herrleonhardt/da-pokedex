@@ -1,3 +1,7 @@
+const DIALOG = document.getElementById(`dialog`);
+const DIALOG_STATSCONTAINER = document.getElementById(`statscontainer`);
+
+
 /**
  * dictionary of all cached PokemonObjects
  * Key-Value-Pairs
@@ -13,21 +17,6 @@ let cachedPokemon = {};
  * makes filtering possible
  */
 let renderedPokemon = [];
-
-/*
-pokemonObject
-
-
-{   
-    name : name,
-    id : id,    
-    types : {type1,type2},
-    evolutesTo : name,
-    imgPath : path
-}
-
-
-*/
 
 async function init() {
   await loadPokemon(35, 0);
@@ -61,12 +50,22 @@ function renderPokemon() {
   cardsContainer.innerHTML = cardsContainerContent;
 }
 
-async function showPokeModal(name){
+async function showPokeModal(name) {
   await loadPokemonCardDetails(name);
-  const pokemnon = cachedPokemon[name];
+  
 
   console.log(`show modla for ${name}`);
+  setTimeout(() => {
+    let pokemnon = cachedPokemon[name];
+    console.log(pokemnon);
+  }, 2300);
   
+  let statscontainerContent = "";
+  // pokemnon.stats.forEach(stat => {
+  //   statscontainerContent += getStatsbarTemplate(`--stat-${stat.key}`, stat);
+  // })
+  // DIALOG_STATSCONTAINER.innerHTML = statscontainerContent;
+  DIALOG.showModal();
 }
 
 /**
@@ -83,6 +82,7 @@ function createPokemonObject(id = "", name = "") {
     evolutesTo: "",
     imgPath: "",
     weight: 0,
+    height: 0,
   });
 }
 
@@ -140,4 +140,37 @@ async function loadPokemonListDetails(name) {
  * updates the card-details (abilitiey, evochain, stats) of a specific pokemon in the cachedPokemon-dictionary
  * @param {string} name of Pokemon as unique identifier
  */
-async function loadPokemonCardDetails(name) {}
+async function loadPokemonCardDetails(name) {
+  let result = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`);
+  let pokemon = await result.json();
+  cachedPokemon[name].stats = getStatsObjectfromJson(pokemon);
+}
+
+function getStatsObjectfromJson(pokemon) {
+  let stats = new Object();
+  pokemon.stats.forEach((statsEntry) => {
+    switch (statsEntry.stat.name) {
+      case "hp":
+        stats.hp = statsEntry.base_stat;
+        break;
+      case "attack":
+        stats.attack = statsEntry.base_stat;
+        break;
+      case "defense":
+        stats.defense = statsEntry.base_stat;
+        break;
+      case "special-attack":
+        stats.specialAttack = statsEntry.base_stat;
+        break;
+      case "special-defense":
+        stats.specialDefense = statsEntry.base_stat;
+        break;
+      case "speed":
+        stats.speed = statsEntry.base_stat;
+        break;
+      default:
+        break;
+    }
+    return stats;
+  });
+}

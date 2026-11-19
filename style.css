@@ -1,8 +1,8 @@
-@import './node_modules/material-icons/iconfont/outlined.css';
 @import url(./styles/fonts.css);
 @import url(./styles/tokens.css);
 @import url(./styles/reset.css);
 @import url(./styles/standard.css);
 @import url(./styles/card.css);
+@import url(./styles/dialog.css);
 
 

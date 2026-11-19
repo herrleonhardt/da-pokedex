@@ -30,7 +30,36 @@
       </div>
     </main>
     <dialog id="dialog" closedby="any">
-      
+      <div class="dialog__header">
+        <div class="dialog__maininfos">
+          <p id="dialog-pkm-id" class="pkm__id">#0001</p>
+          <h3 class="pkm__name">Bulbasaur</h3>
+          <div class="dialog__types">
+            <div class="card__type" style="--type: var(--type-${type}-dark); --type-border: var(--type-${type});">
+                <img src="./assets/img/type-icons/dragon.png" alt="">
+                <p>type</p>
+            </div>
+          </div>
+        </div>
+        <img class="dialog__header-img" src="./assets/img/example/1.png" alt="">
+        <button class="btn__dialog-close" commandfor="dialog" command="close">X</button>
+      </div>
+      <div class="dialog__main-content">
+        <div class="dialog__description dialog__infocontainer">
+
+        </div>
+        <div class="subcontainer">
+          <div class="dialog__stats dialog__infocontainer">
+            <h3 class="flex-row gap-8"><img class="icon" src="./assets/img/icons/stats.png" alt="">Base Stats</h3>
+            <div class="separator"></div>
+            <div id="statscontainer"></div>
+          </div>
+          <div class="dialog__evolution-chain dialog__infocontainer">
+
+          </div>
+        </div>
+      </div>
+      <div class="dialog__footer"></div>
     </dialog>
     <footer>
       <div class="content-limit width-100 footer__content">
